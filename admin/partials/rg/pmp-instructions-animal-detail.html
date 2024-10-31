@@ -1,0 +1,44 @@
+﻿<h3 class="pmp-instruction-heading pmp-margin-top-zero">Animal Details Shortcode</h3>
+<p class="pmp-instruction">[pmp-detail] - use this shortcode to display a single detail of a specific animal from Rescue Groups.</p>
+
+<h3 class="pmp-instruction-heading">Animal Details Parameters</h3>
+<div id="pmp-detail-parameters-adopt-wrapper" class="pmp-div-table">
+	<div class="pmp-div-table-heading">
+		<div class="pmp-div-table-col">Name</div>
+		<div class="pmp-div-table-col">Values</div>
+		<div class="pmp-div-table-col">Description</div>
+	</div>
+
+	<div class="pmp-div-table-row">
+		<div class="pmp-div-table-col pmp-min-height-400">detail - <span class="pmp-red">required</span>.</div>
+		<div class="pmp-div-table-col pmp-min-height-400"><span class="pmp-bold">animalid, animaladoptionfee, animalaltered, animalbirthdate</span>, animalbreed<span class="pmp-bold">, animalcoatlength, animalcolor, animaldeclawed</span>, animaldescriptionplain<span class="pmp-bold">, animaleyecolor, animalfence 
+		</span>, animalgeneralage, <span class="pmp-bold">animalhousetrained</span>, animalname<span class="pmp-bold">, animalneedsfoster, animalokwithadults, animalokwithcats, animalokwithdogs, animalokwithkids</span> 
+		, animalpictures, animalprimarybreed<span class="pmp-bold">, animalsecondarybreed</span>, animalsex<span class="pmp-bold">, animalsizecurrent, animalsizeuom, animalspecialneeds, animalspecialneedsdescription, animalspecialdiet</span>, animalspecies, animalstatus<span class="pmp-bold">, animalsummary</span>, animalthumbnailurl, animalurl<span class="pmp-bold">, animalvideos, animalvideourls, animalyardrequired, locationname</span>
+		</div>
+		<div class="pmp-div-table-col pmp-min-height-400">Enclose the desired detail in double quotes.</div>
+	</div>
+	
+	<div class="pmp-div-table-row">
+		<div class="pmp-div-table-col">case - <span class="pmp-blue">optional</span>.</div>
+		<div class="pmp-div-table-col">The format to display the animal detail.</div>
+		<div class="pmp-div-table-col">Enclose the value lower, mixed or upper in double quotes.</div>
+	</div>	
+	<div class="pmp-div-table-row">
+		<div class="pmp-div-table-col">replace - <span class="pmp-blue">optional</span>.</div>
+		<div class="pmp-div-table-col">Character(s) used to replace spaces in the animal detail.</div>
+		<div class="pmp-div-table-col">Enclose the character(s) in double quotes.</div>
+	</div>			
+</div>
+<p class="pmp-instruction"><span class="pmp-bold">NOTES:</span> The use of <span class="pmp-bold">bold values</span> requires a <span class="pmp-green">paid subscription</span>. Review the Rescue Grouos documentation for a complete description for each field.</p>
+
+<h3 class="pmp-instruction-heading">Animal Details Shortcode Best Practices</h3>
+<ol>
+	<li class="pmp-instruction">Use this shortcode to customize the heading and/or copy of your website page displaying animal details for any search method (adoption, lost or found).</li>
+	<li class="pmp-instruction">detail - Only a single detail can be used as a parameter.</li>
+	<li class="pmp-instruction">case - The detail is displayed as lower case if the case parameter is not included.</li>
+	<li class="pmp-instruction">replace - Used only when the data is poorly formatted.</li>	
+</ol>
+
+<h3 class="pmp-instruction-heading">Animal Details Shortcode Example</h3>
+<p class="pmp-instruction">[pmp-detail detail="animalname" case="mixed"]</p>
+<p class="pmp-instruction">This shortcode displays an animal's name in mixed case (first letter capitalization).</p>

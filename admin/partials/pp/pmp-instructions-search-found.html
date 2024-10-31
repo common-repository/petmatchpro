@@ -1,0 +1,62 @@
+﻿<h3 class="pmp-instruction-heading pmp-margin-top-zero">Found Search Shortcode</h3>
+<p class="pmp-instruction">[pmp-found-search] - Use this shortcode in a page of your website to display found animal search results from PetPoint.</p>
+
+<h3 class="pmp-instruction-heading">Found Search Parameters</h3>
+<div id="pmp-search-parameters-adopt-wrapper" class="pmp-div-table">
+	<div class="pmp-div-table-heading">
+		<div class="pmp-div-table-col">Name</div>
+		<div class="pmp-div-table-col">Values</div>
+		<div class="pmp-div-table-col">Description</div>
+	</div>
+
+	<div class="pmp-div-table-row">
+		<div class="pmp-div-table-col">title - <span class="pmp-blue">optional</span>.</div>
+		<div class="pmp-div-table-col">Free Text</div>
+		<div class="pmp-div-table-col">Enclose text to be displayed above the search results in double quotes.</div>
+	</div>
+	
+	<div class="pmp-div-table-row">
+		<div class="pmp-div-table-col">species - <span class="pmp-blue">optional</span>.</div>
+		<div class="pmp-div-table-col"><span class="pmp-bold">all, cat, dog, other</span></div>
+		<div class="pmp-div-table-col">Enclose a single value from the list in double quotes.</div>
+	</div>	
+	
+	<div class="pmp-div-table-row">
+		<div class="pmp-div-table-col">orderby - <span class="pmp-blue">optional</span>.</div>
+		<div class="pmp-div-table-col"><span class="pmp-bold">breed, datefirst (ascending), datelast (descending), id, name, sex</span></div>
+		<div class="pmp-div-table-col">Enclose a single value from the list in double quotes.</div>
+	</div>	
+	
+	<div class="pmp-div-table-row">
+		<div class="pmp-div-table-col">filter - <span class="pmp-blue">optional</span>.<br>Values provided in the shortcode override the options configured in the <i>Filter Options</i> tab.</div>
+		<div class="pmp-div-table-col"><span class="pmp-bold">agegroup, sex, speciesid</span></div>
+		<div class="pmp-div-table-col">Enclose the filter options for the animal search separated by commas in double quotes. The filters are displayed in the order listed.</div>
+	</div>
+	
+	<div class="pmp-div-table-row">
+		<div class="pmp-div-table-col">details - <span class="pmp-blue">optional</span>.<br>Values provided in the shortcode override the options configured in the <i>Filter Options</i> tab.</div>
+		<div class="pmp-div-table-col"><span class="pmp-bold">age, city, foundaddress, founddate, id, jurisdiction, location, name, primarybreed, primarycolor, secondardbreed, secondarycolor, sex, spayedneutered, species, stage, state, type</span></div>
+		<div class="pmp-div-table-col">Enclose the result fields to display as search results separated commas in double quotes. The fields are displayed in the order listed.</div>
+	</div>
+	
+	<div class="pmp-div-table-row">
+		<div class="pmp-div-table-col">count - <span class="pmp-blue">optional</span>.</div>
+		<div class="pmp-div-table-col">Positive Integer</div>
+		<div class="pmp-div-table-col">Enclose the number of search results to return in double quotes.</div>
+	</div>
+			
+</div>
+<p class="pmp-instruction">NOTES: Use of this shortcode requires a <span class="pmp-green">paid subscription</span>. Review the PetPoint Web Services Guide for a complete description for each field.</p>
+
+<h3 class="pmp-instruction-heading">Found Search Shortcode Best Practices</h3>
+<ol>
+	<li class="pmp-instruction">title - Include a call to action or other descriptive text to assist website visitors.</li>
+	<li class="pmp-instruction">species - Display all found animals on a single page of your website and include speciesid as a filter option.</li>	
+	<li class="pmp-instruction">orderby - Use the value "datelast" to display the most recent animals first. If not provided, results will be sorted by the field selected in the <i>General Options</i> tab.</li>
+	<li class="pmp-instruction">filter - Only include fields for which data is available.</li>
+	<li class="pmp-instruction">details - Include the minimum amount of information required to select an animal search result. Do not include name unless most found animals are identifiable.</li>
+</ol>
+
+<h3 class="pmp-instruction-heading">Found Search Shortcode Example</h3>
+<p class="pmp-instruction">[pmp-found-search title="Contact Us to Reclaim Your Found Animal" orderby="DateLast" filter="speciesid,sex,agegroup" details="founddate,sex,jurisdiction"]</p>
+<p class="pmp-instruction">This shortcode displays search results for found animals of all species in descending found date order with the title specified above the search results. Website visitors can filter by species, sex and age group. The animal founddate, sex and jurisdiction are displayed for each search result.</p>

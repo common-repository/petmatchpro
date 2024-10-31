@@ -1,0 +1,73 @@
+﻿<h3 class="pmp-instruction-heading pmp-margin-top-zero">Adoptable Details Shortcode</h3>
+
+<p class="pmp-instruction">[pmp-adoptable-details] - include this shortcode in a page of your website to display the details of a specific animal selected from the Rescue Groups search results or for use in creating a page for a specific animal.</p>
+
+
+
+<h3 class="pmp-instruction-heading">Adoptable Details Parameters</h3>
+
+<div id="pmp-detail-parameters-adopt-wrapper" class="pmp-div-table">
+
+	<div class="pmp-div-table-heading">
+
+		<div class="pmp-div-table-col">Name</div>
+
+		<div class="pmp-div-table-col">Values</div>
+
+		<div class="pmp-div-table-col">Description</div>
+
+	</div>
+
+
+
+	<div class="pmp-div-table-row">
+
+		<div class="pmp-div-table-col pmp-min-height-400">details - <span class="pmp-blue">optional</span>.</div>
+
+		<div class="pmp-div-table-col pmp-min-height-400"><span class="pmp-bold">animalid, animaladoptionfee, animalaltered, animalbirthdate</span>, animalbreed<span class="pmp-bold">, animalcoatlength, animalcolor, animaldeclawed</span>, animaldescriptionplain<span class="pmp-bold">, animaleyecolor, animalfence 
+
+		</span>, animalgeneralage, <span class="pmp-bold">animalhousetrained</span>, animalname<span class="pmp-bold">, animalneedsfoster, animalokwithadults, animalokwithcats, animalokwithdogs, animalokwithkids</span> 
+
+		, animalpictures, animalprimarybreed<span class="pmp-bold">, animalsecondarybreed</span>, animalsex<span class="pmp-bold">, animalsizecurrent, animalsizeuom, animalspecialneeds, animalspecialneedsdescription, animalspecialdiet</span>, animalspecies, animalstatus<span class="pmp-bold">, animalsummary</span>, animalthumbnailurl, animalurl<span class="pmp-bold">, animalvideos, animalvideourls, animalyardrequired, locationname</span>
+
+		</div>
+
+		<div class="pmp-div-table-col pmp-min-height-400">Enclose the detail options for the animal details separated by commas in double quotes. The details are displayed in the order listed and override those configured in the <i>Filter Options</i> tab.</div>
+
+	</div>
+
+	
+
+	<div class="pmp-div-table-row">
+
+		<div class="pmp-div-table-col">template - <span class="pmp-blue">optional</span>.</div>
+
+		<div class="pmp-div-table-col">The name of the template file for use in displaying the animal details.</div>
+
+		<div class="pmp-div-table-col"><span class="pmp-green">Paid feature.</span> Enclose the name of the .php file in double quotes. Specifying a template file overrides the template configured in the <i>General Options</i> tab.</div>
+
+	</div>	
+
+</div>
+
+<p class="pmp-instruction"><span class="pmp-bold">NOTES:</span> The use of <span class="pmp-bold">bold values</span> requires a <span class="pmp-green">paid subscription</span>. Review the Rescue Groups documentation for a complete description for each field.</p>
+
+
+
+<h3 class="pmp-instruction-heading">Adoptable Details Shortcode Best Practices</h3>
+
+<ol>
+
+	<li class="pmp-instruction">details - All photos and the video will be displayed if available.</li>
+
+	<li class="pmp-instruction">template - This is an advanced feature requiring the coding of custom templates.</li>
+
+</ol>
+
+
+
+<h3 class="pmp-instruction-heading">Adoptable Details Shortcode Example</h3>
+
+<p class="pmp-instruction">[pmp-adoptable-details details="animalname,animalspecies,animalsex,animalaltered,animalprimarybreed,animalcolor,animalbirthdate,animalhousetrained,animaldeclawed,animaldescriptionplain,animalsizecurrent,animalid,locationname"]</p>
+
+<p class="pmp-instruction">This shortcode displays details for a single adoptable animal with an identifier passed via the page URL displaying the listed fields in their specified order.</p>

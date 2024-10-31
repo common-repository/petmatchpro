@@ -1,0 +1,104 @@
+#all {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 100vh;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#play-video {
+    border: 4px solid;
+    border-radius: 50%;
+    padding: 6px 11px;
+    background: transparent;
+    font-size: 24px;
+    color: #ae2f3b;
+    border-color: #ae2f3b;
+    height: 56px;
+    width: 56px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: all 0.3s ease !important;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    line-height: 1.5;
+    cursor: pointer;
+}
+#play-video:hover {
+    transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -webkit-transform:scale(1.05);
+    -o-transform:scale(1.05);
+}
+#play-video i {
+    transition: all 0s ease !important;
+    -webkit-transition: all 0s ease;
+    -moz-transition: all 0s ease;
+    -o-transition: all 0s ease;
+    line-height: 0;
+}
+#play-video:hover {
+    background-color: #ae2f3b;
+    color: #ffffff;
+}
+#close-video {
+    border: 4px solid;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 26px;
+    color: #8D908A;
+    height: 56px;
+    width: 56px;
+    text-align: center;
+}
+
+.youtube-video .modal-dialog {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    padding: 0 15px;
+    height: 100%;
+    max-width: 1000px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#video-container {
+    position: relative;
+    padding-bottom: 50%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+iframe#youtubevideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.youtube-video .modal-footer {
+    border: none;
+    text-align: center;
+    display: block;
+    padding: 0;
+}
+.youtube-video .modal-content {
+    background: none !important;
+    border: none;
+}

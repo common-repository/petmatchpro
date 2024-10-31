@@ -1,0 +1,35 @@
+﻿<h3 class="pmp-instruction-heading pmp-margin-top-zero">Admin Settings Shortcode</h3>
+<p class="pmp-instruction">[pmp-option] - use this shortcode to display the value of a settng within the PetMatchPro administration area.</p>
+
+<h3 class="pmp-instruction-heading">Admin Settings Parameters</h3>
+<div id="pmp-detail-parameters-adopt-wrapper" class="pmp-div-table">
+	<div class="pmp-div-table-heading">
+		<div class="pmp-div-table-col">Name</div>
+		<div class="pmp-div-table-col">Values</div>
+		<div class="pmp-div-table-col">Description</div>
+	</div>
+
+	<div class="pmp-div-table-row">
+		<div class="pmp-div-table-col" style="min-height:100px;">type - <span class="pmp-red">required</span>.</div>
+		<div class="pmp-div-table-col" style="min-height:100px;">general, <span class="pmp-bold">filter</span>, contact or <span class="pmp-bold">label</span>.</div>
+		<div class="pmp-div-table-col" style="min-height:100px;">Enclose the name of the admin tab in double quotes.</div>
+	</div>
+	
+	<div class="pmp-div-table-row">
+		<div class="pmp-div-table-col">value - <span class="pmp-red">required</span>.</div>
+		<div class="pmp-div-table-col">The html id name for the desired adninistration setting.</div>
+		<div class="pmp-div-table-col">Enclose the desired admin setting in double quotes. The id name can be found by inspecting the html code for the desired admin field.</div>
+	</div>	
+</div>
+<p class="pmp-instruction"><span class="pmp-bold">NOTES:</span> The use of <span class="pmp-bold">bold values</span> requires a <span class="pmp-green">paid subscription</span>.</p>
+
+<h3 class="pmp-instruction-heading">Admin Settings Shortcode Best Practices</h3>
+<ol>
+	<li class="pmp-instruction">Use this shortcode to include any of the PetMatchPro settings in your website pages or custom templates.</li>
+	<li class="pmp-instruction">type - Only a single tab name can be used as a parameter.</li>
+	<li class="pmp-instruction">value - Only a single setting id can be used as a parameter. You will be required to format the value as desired.</li>
+</ol>
+
+<h3 class="pmp-instruction-heading">Admin Settings Shortcode Example</h3>
+<p class="pmp-instruction">[pmp-option type="contact" value="adoptable_phone"]</p>
+<p class="pmp-instruction">This shortcode displays the value of the <i>Adoption Phone</i> setting from the <i>Contact Options</i> tab.</p>

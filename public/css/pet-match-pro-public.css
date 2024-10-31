@@ -1,0 +1,184 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+a{
+    text-decoration: none !important;
+}
+.container2 {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: "side article-0"
+  "side article-2"
+  "side article-4"
+  "side article-6"
+  "side article-8"
+  "side article-10"
+  "side article-12"
+    "side article-14";
+  grid-template-columns: 120px 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.container > div {
+  border: 1px dashed #888;
+}
+
+.side {
+  grid-area: side;
+}
+.article-0 {
+  grid-area: article-0;
+}
+.article-2 {
+  grid-area: article-2;
+}
+.article-4 {
+  grid-area: article-4;
+}
+.article-6 {
+  grid-area: article-6;
+}
+.article-8 {
+  grid-area: article-8;
+}
+.article-10 {
+  grid-area: article-10;
+}
+.article-12 {
+  grid-area: article-12;
+}
+
+.article-14 {
+  grid-area: article-14;
+}
+
+.grid-container5 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.grid-container4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+
+
+
+
+#all {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 100vh;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#pmp-play-video {
+    border: 4px solid;
+    border-radius: 50%;
+    padding: 6px 11px;
+    background: transparent;
+    font-size: 24px;
+    color: #ae2f3b;
+    border-color: #ae2f3b;
+    height: 56px;
+    width: 56px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: all 0.3s ease !important;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    line-height: 1.5;
+    cursor: pointer;
+}
+#pmp-play-video:hover {
+    transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -webkit-transform:scale(1.05);
+    -o-transform:scale(1.05);
+}
+#pmp-play-video i {
+    transition: all 0s ease !important;
+    -webkit-transition: all 0s ease;
+    -moz-transition: all 0s ease;
+    -o-transition: all 0s ease;
+    line-height: 0;
+}
+#pmp-play-video:hover {
+    background-color: #ae2f3b;
+    color: #ffffff;
+}
+#close-video {
+    border: 4px solid;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 26px;
+    color: #8D908A;
+    height: 56px;
+    width: 56px;
+    text-align: center;
+}
+
+.youtube-video .modal-dialog {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    padding: 0 15px;
+    height: 100%;
+    max-width: 1000px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	z-index:-9999;
+}
+#video-container {
+    position: relative;
+    padding-bottom: 50%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+iframe#youtubevideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.youtube-video .modal-footer {
+    border: none;
+    text-align: center;
+    display: block;
+    padding: 0;
+}
+.youtube-video .modal-content {
+    background: none !important;
+    border: none;
+}
+
+.modal-backdrop{
+    z-index: 0 !Important;
+}

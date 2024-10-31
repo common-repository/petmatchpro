@@ -1,0 +1,245 @@
+﻿ /* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+#gk-pets-options form,
+#gk-pets-options table {
+  max-width: 1310px;
+  border: 1px solid #c3c4c7;
+  background-color: #ffffff;
+}
+
+#gk-pets-options table td {
+  width: 50%;
+}
+
+#gk-pets-options table td div#pmp-error-message .pmp-error {
+    font-size: 125%;
+    color: red;
+}
+
+#gk-pets-options table td select,
+#gk-pets-options table td input:not(input[type="checkbox"]) {
+  width: 100%;
+  max-width: 100%;
+}
+
+#gk-pets-options table td textarea, #gk-pets-options table td select, #gk-pets-options table td input[type=text] {
+  max-width: 60% !important;
+}
+
+table.form-table tbody tr td label {
+  display: block;
+}
+
+#gk-pets-options table th {
+  width: 20%;
+  padding-left: 17px !important;
+}
+
+#gk-pets-options .gk-pets-checkbox-wrapper {
+  width: 220px;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+#gk-pets-options .gk-pets-checkbox-wrapper label {
+
+	display: inline-block !important;
+
+}
+
+
+
+.nav-tab-active {
+
+  background-color: #ffffff;
+
+}
+
+
+
+.pmp-error {
+    font-size: 125%;
+    color: red;
+}
+
+.pmp-top-line{
+  border-top: 1px solid #333;
+}
+
+.pmp-license-info-title {
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+div.pmp-license-help {
+	margin-top: 2rem;
+}
+
+tr.pmp-option-disable td select {
+	pointer-events: none;
+	border: 1px solid gray;
+	background-color: lightgray;
+}
+
+tr.pmp-option-disable td input {
+	pointer-events: none;
+	border: 1px solid gray;
+	background-color: lightgray;
+}
+
+tr.pmp-option-disable td textarea {
+	pointer-events: none;
+	border: 1px solid gray;
+	background-color: lightgray;
+}
+
+/*tr.pmp-option-exclude th {
+	color: red;
+}*/
+
+tr.pmp-option-exclude td select {
+	border: 1px solid red;
+	background-color: lightgray;
+}
+
+tr.pmp-option-exclude td input {
+	border: 1px solid red;
+	background-color: lightgray;
+}
+
+tr.pmp-option-exclude td textarea {
+	border: 1px solid red;
+	background-color: lightgray;
+}
+
+.pmp-margin-top-zero {
+	margin-top: 0 !important;
+}
+
+.pmp-margin-top-1-rem {
+	margin-top: 1rem !important;
+}
+
+.pmp-margin-bottom-1-rem {
+	margin-bottom: 1rem !important;
+}
+
+.pmp-blue {
+    color: #2BACE2 !important;
+}
+
+.pmp-green {
+    color: #6FBE44 !important;
+} 
+
+.pmp-orange {
+    color: #fbb042 !important;
+} 
+
+.pmp-purple {
+    color: #A21A6F !important;
+}    
+
+.pmp-red {
+    color: red !important;
+} 
+
+.pmp-bold {
+	font-weight:bold;
+}
+
+.pmp-text-50 {
+	font-size: 50% !important;
+}
+
+.pmp-text-75 {
+	font-size: 75% !important;
+}
+
+.pmp-instruction-title {
+    color: #A21A6F !important;
+}
+
+.pmp-div-table {
+	display: table;         
+	width: auto;             
+}
+
+.pmp-div-table-heading {
+	display: table-row;
+	width: auto;
+	clear: both;
+	font-size: 125%;
+	font-weight: 700;
+	text-align: center;
+}
+.pmp-div-table-row {
+	display: table-row;
+	width: auto;
+	clear: both;
+}
+
+.pmp-div-table-col {
+	float: left; /* fix for  buggy browsers */
+	display: table-column;         
+	width: 30%;         
+	border: 1px solid #666666; 
+	background-color: #FFFFFF;  
+}
+
+.pmp-div-table-row > .pmp-div-table-col {
+	min-height: 100px;
+	padding: 0px 5px;
+	box-sizing: border-box;
+}
+
+div.pmp-div-table-col.pmp-min-height-100 {
+	min-height: 100px !important;	
+}
+
+div.pmp-div-table-col.pmp-min-height-200 {
+	min-height: 200px !important;	
+}
+
+div.pmp-div-table-col.pmp-min-height-300 {
+	min-height: 300px !important;	
+}
+
+div.pmp-div-table-col.pmp-min-height-400 {
+	min-height: 400px !important;	
+}
+
+div.pmp-div-table-col.pmp-min-height-500 {
+	min-height: 500px !important;	
+}
+
+.pmp-div-table-heading > .pmp-div-table-col {
+	padding: 0px 5px;
+	box-sizing: border-box;
+	background-color: #ccc;
+}

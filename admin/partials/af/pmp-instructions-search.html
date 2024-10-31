@@ -1,0 +1,62 @@
+﻿<h3 class="pmp-instruction-heading pmp-margin-top-zero">Animal Search Shortcode</h3>
+<p class="pmp-instruction">[pmp-search] - Use this shortcode in a page of your website to display animal search results from AnimalsFirst. </p>
+
+<h3 class="pmp-instruction-heading">Search Parameters</h3>
+<div id="pmp-search-parameters-adopt-wrapper" class="pmp-div-table">
+	<div class="pmp-div-table-heading">
+		<div class="pmp-div-table-col">Name</div>
+		<div class="pmp-div-table-col">Values</div>
+		<div class="pmp-div-table-col">Description</div>
+	</div>
+
+	<div class="pmp-div-table-row">
+		<div class="pmp-div-table-col">type - <span class="pmp-red">required</span>.</div>
+		<div class="pmp-div-table-col">available, <span class="pmp-bold">found, foster, lost, lost_found, outcome, rehome, stray</span></div>
+		<div class="pmp-div-table-col">Enclose a single value from the list in double quotes.</div>
+	</div>
+
+	<div class="pmp-div-table-row">
+		<div class="pmp-div-table-col">species - <span class="pmp-red">required</span>.</div>
+		<div class="pmp-div-table-col">cat, dog, <span class="pmp-bold">other valid AnimalsFirst species</span></div>
+		<div class="pmp-div-table-col">Enclose a single value from the list in double quotes.</div>
+	</div>
+	
+	<div class="pmp-div-table-row">
+		<div class="pmp-div-table-col">title - <span class="pmp-blue">optional</span>.</div>
+		<div class="pmp-div-table-col">Free Text</div>
+		<div class="pmp-div-table-col">Enclose text to be displayed above the search results in double quotes.</div>
+	</div>
+	
+	<div class="pmp-div-table-row">
+		<div class="pmp-div-table-col pmp-min-height-300">filter - <span class="pmp-blue">optional</span>.<br>Values provided in the shortcode override the options configured in the <i>Filter Options</i> tab.</div>
+		<div class="pmp-div-table-col pmp-min-height-300"><span class="pmp-bold">age</span>, breed, gender<span class="pmp-bold">, intake_date, primary_color, size, microchip, seq_id</span>, species<span class="pmp-bold">, sortfield, sortorder</span></div>
+		<div class="pmp-div-table-col pmp-min-height-300">Enclose the filter options for the animal search separated by commas in double quotes. The filters are displayed in the order listed.</div>
+	</div>
+	
+	<div class="pmp-div-table-row">
+		<div class="pmp-div-table-col pmp-min-height-300">details - <span class="pmp-blue">optional</span>.<br>Values provided in the shortcode override the options configured in the <i>Filter Options</i> tab.</div>
+		<div class="pmp-div-table-col pmp-min-height-300"><span class="pmp-bold">address, address_1, address_2, adopt_profile_url, adoption_fee, age</span>, all_photos<span class="pmp-bold">, altered, birthday</span>, breed<span class="pmp-bold">, city, country, est_birthday, declawed</span>, description, display_age<span class="pmp-bold">, featured</span>, gender<span class="pmp-bold">, google_address_url, google_geometry, google_formatted_address, google_lat, google_lng, id, intake_date, intake_type, kennel, location, long_address, los, microchip</span>, name<span class="pmp-bold">, outcome_date, primary_color, secondary_breed, secondary_color, seq_id, shelter_id, size</span>, species<span class="pmp-bold">, state, status, youtube_links, zip</span></div>
+		<div class="pmp-div-table-col pmp-min-height-300">Enclose the result fields to display as search results separated commas in double quotes. The fields are displayed in the order listed.</div>
+	</div>
+	
+	<div class="pmp-div-table-row">
+		<div class="pmp-div-table-col">count - <span class="pmp-blue">optional</span>.</div>
+		<div class="pmp-div-table-col">Positive Integer</div>
+		<div class="pmp-div-table-col">Enclose the number of search results to return in double quotes.</div>
+	</div>
+	
+</div>
+<p class="pmp-instruction"><span class="pmp-bold">NOTES:</span> The use of <span class="pmp-bold">bold values</span> requires a <span class="pmp-green">paid subscription</span>. Review the AnimalsFirst documentation for a complete description for each field.</p>
+
+<h3 class="pmp-instruction-heading">Search Shortcode Best Practices</h3>
+<ol>
+	<li class="pmp-instruction">type - Create a separate page on your website for each type of search.</li>
+	<li class="pmp-instruction">species - Create a separate page on your website for each species of animal.</li>
+	<li class="pmp-instruction">title - Include a call to action or other descriptive text to assist website visitors.</li>
+	<li class="pmp-instruction">filter - Only include fields for which data is available. Do not include fields requiring visitors to enter text values.</li>
+	<li class="pmp-instruction">details - Include the minimum amount of information required to select an animal search result.</li>
+</ol>
+
+<h3 class="pmp-instruction-heading">Search Shortcode Example</h3>
+<p class="pmp-instruction">[pmp-search type="available" species="cat" title="Available Cats for Adoption" filter="gender,age,sortfield,sortorder" details="name,gender,age"]</p>
+<p class="pmp-instruction">This shortcode displays search results for adoptable cats with the title specified above the search results. Website visitors can filter by gender and age and can sort the results by the options configured in the <i>Filter Options</i> tab by the order selected. The animal name, gender and age are displayed for each search result.</p>

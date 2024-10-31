@@ -1,0 +1,1151 @@
+Version 5.3.5 - September 17, 2024
++ /petmatchpro.php
+    * Define constants for all PetPoint data fields.
+    * Add constants for PetPoint method types.
+    * Rename/group PetPoint constants as appropriate.
++ /includes/pp/partials/pmp-field-levels-*.pp
+    * Update level definitions to use constants.
++ /includes/pp/partials/pmp-field-values-*.pp
+    * Update label definitions to use constants.
++ /admin/partials/pp/pmp-admin-info.php
+    * Update help text keys and content to use constants.
+    * Add help text for new Color Tab text link options.
++ /admin/partials/pp/pmp-option-levels-filter.php
+    * Update references to use new constants.
++ /admin/partials/pp/pmp-option-levels-labels.php
+    * Update references to use new constants.
++ /includes/pp/class-pet-match-pro-pp-options.php
+    * Rewrite initialize_label_options function to dynamically generate label setting fields from pmp-field-values-*.php.
++ /includes/pp/class-pet-match-pro-pp-detail-functions.php
+    * Update references to use new constants.
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Update references to use new constants.
+    * Define public variable $searchOutput.
++ /public/templates/pp/*.php
+    * Update all templates to use new level and field names.
+    * Update require files to use public path variable.
++ /public/class-pet-match-pro-public.php
+    * Revise short code logic to display null for all short codes when called from a page builder.
++ /includes/class-pet-match-ro-all-api.pp
+    * Correct bug in function showLabels when display search labels option is not enabled.
++ /includes/class-pet-match-pro-activator.php
+    * Require method type field value files vs. require_once. 
+    * Add default entries for new Color Tab text link options.
+    * Revise AnimalsFirst default label processing. 
++ /admin/class-pet-match-pro-settings.php
+    * Add Color Tab options for Text Links. 
++ /admin/partials/pmp-option-levels-color.php
+    * Add level entries for new Color Tab text link options.
++ /includes/af/class-pet-match-pro-af-options.php
+    * Correct code to display shared search/detail labels for all method types.
+
+Version 5.3.4 - August 5, 2024
++ /petmatchpro.php
+    * Define constants for all RescueGroups data fields.
+    * Add constants for RescueGroups method types.
+    * Rename/group RescueGroups constants as appropriate.
++ /includes/rg/partials/pmp-field-levels-*.pp
+    * Update level definitions to use constants.
++ /includes/rg/partials/pmp-field-values-*.pp
+    * Update label definitions to use constants.
+    * Remove reverse Species value arrays.
++ /admin/partials/rg/pmp-admin-info.php
+    * Update help text keys and content to use constants.
++ /admin/partials/rg/pmp-option-levels-filter.php
+    * Update references to use new constants.
++ /admin/partials/rg/pmp-option-levels-labels.php
+    * Update references to use new constants.
++ /includes/rg/class-pet-match-pro-rg-api.php
+    * Update references to use new constants.
++ /includes/rg/class-pet-match-pro-rg-detail-functions.php
+    * Update references to use new constants.
++ /includes/rg/class-pet-match-pro-rg-options.php
+    * Rewrite initialize_label_options function to dynamically generate label setting fields from pmp-field-values-adopt.php.
++ /public/templates/rg/*.php
+    * Update all templates to use new level and field names.
+    * Update require files to use public path variable.
+
+Version 5.3.3 - August 4, 2024
++ /includes/public/class-pet-match-pro-public.php
+    * Initialize Integration Partner to PetPoint when no General Settings exist.
++ /includes/class-pet-match-pro.php
+    * Initialize Integration Partner to PetPoint when no General Settings exist.
++ /admin/class-petmatch-pro-filter-functions.php
+    * Add callback and other functions removed from other classes. 
+    * Renamed file to class-petmatch-pro-functions.php
++ /admin/class-pet-match-pro-admin.php
+    * Remove initialization of Integration Partner. 
+    * Change file name for admin functions to class-pet-match-pro-functions.php
++ /admin/class-pet-match-pro-admin-settings.php
+    * Initialize Integration Partner to PetPoint when no General Settings exist.
+    * Default references to General Tab settings as appropriate.
+    * Remove callback and general array functions and reference functions in class-petmatch-pro-functions.php.
++ /includes/class-pet-match-pro-all-api.php
+    * Initialize Integration Partner to PetPoint when no General Settings exist.
+    * Update function locationExclusions to assign location constant prior to processing General Tab options.
++ /includes/class-pet-match-pro-detail-functions.php
+    * Initialize Integration Partner to PetPoint when no General Settings exist.
+    * Initialize other General Tab options to blank if General Tab has not been initialized. 
++ /includes/af/class-pet-match-pro-af-api.php
+    * Initialize Integration Partner to PetPoint when no General Settings exist.
+    * Initialize other General Tab options as appropriate if General Tab has not been initialized. 
+    * Change file name for admin functions to class-pet-match-pro-functions.php
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Initialize Integration Partner to PetPoint when no General Settings exist.
+    * Initialize other General Tab options as appropriate if General Tab has not been initialized. 
+    * Change file name for admin functions to class-pet-match-pro-functions.php
++ /includes/rg/class-pet-match-pro-rg-api.php
+    * Initialize Integration Partner to PetPoint when no General Settings exist.
+    * Initialize other General Tab options as appropriate if General Tab has not been initialized. 
+    * Change file name for admin functions to class-pet-match-pro-functions.php
++ /includes/af/class-pet-match-pro-af-options.php
+    * Remove callback and general array functions and reference functions in class-petmatch-pro-functions.php.
++ /includes/pp/class-pet-match-pro-pp-options.php
+    * Remove callback and general array functions and reference functions in class-petmatch-pro-functions.php.
++ /includes/rg/class-pet-match-pro-rg-options.php
+    * Remove callback and general array functions and reference functions in class-petmatch-pro-functions.php.
+
+Version 5.3.2 - July 31, 2024
++ /petmatchpro.php
+    * Define constants for all AnimalsFirst data fields.
+    * Add constants for AnimalsFirst method types.
+    * Rename/group AnimalsFirst constants as appropriate.
+    * Removed constant 'ANIMALSFIRST_TYPE_PREFERRED' and transitioned to General Tab setting.
++ /admin/class-pet-match-pro-admin-settings.php
+    * New AnimalsFirst setting for the label value for the Preferred Method Type. 
+    * Replace all references of MethodTypes with new constants.
++ /admin/partials/pmp-admin-info.php
+    * Replace all references of MethodTypes with new constants.
++ /admin/partials/af/pmp-admin-info.php
+    * Update help text keys and content to use constants.
++ /admin/partials/af/pmp-option-levels-filter.php
+    * Update references to use new constants.
++ /admin/partials/af/pmp-option-levels-labels.php
+    * Update references to use new constants.
++ /includes/af/class-pet-match-pro-af-options.php
+    * Replace all references of MethodTypes with new constants.
+    * Add lines between method type sections in the Filters tab.
++ /includes/af/class-pet-match-pro-af-api.php
+    * Replace all references of MethodTypes with new constants.
++ /includes/af/partials/pmp-field-levels-*.pp
+    * Update level definitions to use constants.
++ /includes/af/partials/pmp-field-values-*.pp
+    * Update label definitions to use constants.
++ /public/templates/af/*.php
+    * Replace all references of MethodTypes with new constants.
++ /public/templates/af/details-poster.php
+    * Correct issues with the display of the animal description and QR code.
++ /public/class-pet-match-pro-public.php
+    * Update pmp-detail shortcode function to prevent processing of the description field for all integration partners.
+
+Version 5.3.1 - July 22, 2024
++ /petmatchpro.php
+    * Define constants for all AnimalsFirst data fields.
+    * Add constants for AnimalsFirst method types.
+    * Rename/group AnimalsFirst constants as appropriate.
++ /includes/af/partials/pmp-field-levels-*.pp
+    * Update level definitions to use constants.
++ /includes/af/partials/pmp-field-values-*.pp
+    * Update label definitions to use constants.
++ /includes/af/class-pet-match-pro-af-api.php
+    * Update references to use new breed and color constants.
++ /public/templates/af/*.php
+    * Update all templates to use new level and field names.
+    * Update require files to use public path variable.
+
+Version 5.2.3 - July 18, 2024
++ /admin/class-pet-match-pro-filter-functions.php
+    * Use the default label when the label on the admin Labels tab is empty. 
+    * Use the default label when the label for the search form in the admin Labels tab is empty. 
++ /includes/class-pet-match-pro-all-api.php
+    * Remove the Submit button from the search form when no entries are provided. 
+    * Return the location value when no filters are configured. 
++ /includes/af/class-pet-match-pro-detail-functions.php
+    * Use the default label when the label on the admin Labels tab is empty. 
++ /includes/af/class-pet-match-pro-af-api.php
+    * Use the default label when outputting animal details if the label on the admin Labels tab is empty.
+    * Use the default label for the search filter fields if the label on the admin Labels tab is empty.
+    * Update logic to remove the last label separator from the search results.
++ /includes/pp/class-pet-match-pro-detail-functions.php
+    * Use the default label when the label on the admin Labels tab is empty. 
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Use the default label when outputting animal details if the label on the admin Labels tab is empty.
+    * Use the default label for the search filter fields if the label on the admin Labels tab is empty.
+    * Update key value for other location filter. 
+    * Use constants as appropriate. 
+    * Standardize/simplify logic as appropriate. 
+    * Update logic to remove the last label separator from the search results.
++ /includes/pp/class-pet-match-pro-pp-options.php
+    * Remove static array values for filter values for dog and cat breeds.
++ /includes/pp/partials/pmp-field-values.php
+    * Add value entries for breeds, ok and sex fields. 
++ /includes/rg/class-pet-match-pro-detail-functions.php
+    * Use the default label when the label on the admin Labels tab is empty. 
++ /includes/rg/class-pet-match-pro-rg-api.php
+    * Use the default label when outputting animal details if the label on the admin Labels tab is empty.
+    * Update key value for other location filter. 
+    * Update logic to remove the last label separator from the search results.
++ /public/templates/af/details-poster.php
+    * Change 'adoptable' method to 'adopt'.
++ /admin/class-pet-math-po-admin-settings.hp
+    * Add instruction for featured pet. 
+    * Add key for instruction title and instructions. 
+
+Version 5.2.2 - July 8, 2024
++ /includes/rg/class-pet-match-pro-rg-options.php
+    * Change 'adoptable' to 'adopt' in all key values. 
+    * Remove location settings from Filters tab (moved to General tab).
+    * Move Filter tab Details on Search setting below Sort Order.
+    * Revise filter and sort options to  use new functions to define values. 
+    * Update Filter tab settings to return key and label as appropriate. 
++ /includes/pp/class-pet-match-pro-pp-options.php
+    * Change 'adoptable' to 'adopt' in all key values. 
+    * Move Filter tab Details on Search setting below Sort Order for all methods.
+    * Move Found Filter tab settings above lost.
+    * Revise filter and sort options to use new functions to define values. 
+    * Update Filter tab settings to return key and label as appropriate. 
++ /admin/partials/rg/pmp-admin-info.php
+    * Change 'adoptable' to 'adopt' in all key values.
+    * Remove help text for location fields.
++ /admin/partials/pp/pmp-admin-info.php
+    * Change 'adoptable' to 'adopt' in all key values.
+    * Remove help text for location fields.
++ /includes/rg/class-pet-match-pro-rg-api.php
+    * Change 'adoptable' to 'adopt' in all references. 
+    * Change location other reference from Filters to General tab setting.
+    * Revise filter and sort options to  use new functions to define values.
+    * Revise searchFilters function to support shortcode with empty filter parameter to exclude the filter form.
+    * Revise searchFilters function to support use of admin settings to define filter fields when filter parameter is excluded from shortcode.
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Change 'adoptable' to 'adopt' in all references. 
+    * Change location other reference from Filters to General tab setting.
+    * Revise filter and sort options to  use new functions to define values.
+    * Revise searchFilters function to support shortcode with empty filter parameter to exclude the filter form.
+    * Revise searchFilters function to support use of admin settings to define filter fields when filter parameter is excluded from shortcode.
+    * Update searchFilters function to use new search filters prefix.
++ /includes/rg/partials/pmp-field-levels-adopt.php
+    * Update search result level prefix to 'level_seach_result'.
++ /includes/pp/partials/pmp-field-levels-adopt.php
+    * Update search result level prefix to 'level_seach_result'.
++ /includes/rg/partials/pmp-field-values-adopt.php
+    * Update prefix for search filter label and value fields to 'label_search_filter'.
+    * Update prefix for search results to 'label_search_result'.
+    * Add entries for search_sort.
++ /includes/pp/partials/pmp-field-values-adopt.php
+    * Update prefix for search filter label and value fields to 'label_search_filter'.
+    * Update prefix for search results to 'label_search_result'.
+    * Add entries for search_sort.
++ /includes/pp/partials/pmp-field-values-found.php
+    * Update prefix for search filter label and value fields to 'label_search_filter'.
+    * Update prefix for search results to 'label_search_result'.
+    * Add entries for search_sort.
++ /includes/pp/partials/pmp-field-values-lost.php
+    * Update prefix for search filter label and value fields to 'label_search_filter'.
+    * Update prefix for search results to 'label_search_result'.
+    * Add entries for search_sort.
++ /includes/pp/partials/pmp-field-levels-adopt.php
+    * Update prefix for search filter levels to 'level_search_filter'.
+    * Update prefix for search filter value levels to 'level_search_sort'.
++ /includes/pp/partials/pmp-field-levels-found.php
+    * Update prefix for search filter levels to 'level_search_filter'.
+    * Update prefix for search filter value levels to 'level_search_sort'.
++ /includes/pp/partials/pmp-field-levels-lost.php
+    * Update prefix for search filter levels to 'level_search_filter'.
+    * Update prefix for search filter value levels to 'level_search_sort'.
+    * Update prefix for search result levels to 'level_search_result'.
++ /public/templates/rg/adoptable-*.php
+    * Change 'adoptable' to 'adopt' in all key and variable references. 
+    * Rename files to adopt-*.php.
++ /public/templates/pp/adoptable-*.php
+    * Change 'adoptable' to 'adopt' in all key and variable references. 
+    * Rename files to adopt-*.php.
++ /public/templates/rg/details-poster.php
+    * Change 'adoptable' to 'adopt' in all key and variable references. 
+    * Update QR code link to adoption application. 
++ /public/templates/pp/details-poster.php
+    * Change 'adoptable' to 'adopt' in all key and variable references. 
+    * Update QR code link to adoption application. 
++ /public/templates/af/details-poster.php
+    * Update QR code link to adoption application. 
++ /public/templates/af/adoptable-*.php
+    * Rename files to adopt-*.php.
++ /admin/class-pet-match-pro-admin-settings.php
+    * Filter method details template lists in the General settings by the method type, showing all if no match. 
+    * Correct display of General Tab Sort Order for PetPoint.
++ /includes/class-pet-match-pro-all-api.php
+    * Update buildSearchForm to accept no search filter options. 
++ /includes/af/class-pet-match-pro-af-api.php
+    * Revise searchFilters function to support shortcode with empty filter parameter to exclude the filter form.
+    * Revise searchFilters function to support use of admin settings to define filter fields when filter parameter is excluded from shortcode.
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Revise searchFilters function to support shortcode with empty filter parameter to exclude the filter form.
+    * Revise searchFilters function to support use of admin settings to define filter fields when filter parameter is excluded from shortcode.
+
+Version 5.2.1 - July 6, 2024
++ /pet-math-pro.php
+    * Remove AnimalsFirst filter array/field constants and add a constant for the preferred type suffix. 
++ /includes/af/partials/pmp-field-values.pmp
+    * Add entries for the filter array and field values. 
+    * Update the name of the preferred value types array to use the new preferred type suffix. 
++ /includes/af/class-pet-match-pro-af-api.php
+    * Transition from use of filters array constant to array included in field values file. 
+    * Change 'adoptable' to 'adopt' in all references. 
++ /public/class-pet-match-pro-public.php
+    * Change search method 'AdoptableSearch' to 'adoptSearch'.
++ /includes/af/class-pet-match-pro-af-options.php
+    * Change 'adoptable' to 'adopt' in all key values. 
+    * Update preferred filter and label keys and labels to use new preferred type suffix.
+    * Add filter tab options for preferred search types.
++ /admin/partials/af/pmp-admin-info.php
+    * Change 'adoptable' to 'adopt' in all key values.
++ /admin/partials/af/pmp-option-levels-filter.php
+    * Change other level keys to use the suffix 'preferred'.
++ /admin/partials/af/pmp-option-levels-labels.php
+    * Change other level keys to use the suffix 'preferred'.
++ /admin/partials/pmp-admin-info.php
+    * Change 'adoptable' to 'adopt' in all key values.
+    * Add admin help text entries for preferred search types. 
+    * Update preferred type suffix to new constant. 
++ /admin/class-pet-match-pro-admin-settings.php
+    * Reverse order of lost and found no animal found message settings.
+    * Add no animals found setting for preferred search types.
+    * Change 'adoptable' to 'adopt' in all key values and labels.
+    * Update preferred type suffix to new constant. 
++ /admin/partials/pmp-option-levels-general.php 
+    * Remove enable level keys for preferred type content.
+    * Configure Preferred content with dynamic level suffix. 
++ /admin/class-pet-match-pro-filter-functions.php
+    * Add support for preferred search types to Filter_Option_Values function.
++ /includes/af/partials/pmp-field-levels-preferred.php
+    * New file for level entries for premium search types.
++ /includes/af/partials/pmp-field-values-preferred.php
+    * New file for label and value entries for premium search types.
++ /includes/class-pet-match-pro-all-api.php
+    * Update callMethod_Parameters function for preferred search types. 
+
+Version 5.1.1 - June 30, 2024
++ /pet-match-pro.php
+    * Revise the level and filter prefixes.
++ /admin/class-pet-match-pro-filter-functions.php
+    * New function Filter_Option_Values to populate options on the admin filters tab from the updated prefix values. 
+    * Remove previous functions to display sort filters, fields and order values. 
+    * Update function Search_Filter_Values for use of Filter_Option_Values and new level, level and value prefixes.
++ /admin/class-petmatch-pro-admin-settings.php
+    * Update to use Filter_Option_Values function display order by and sort order fields on General tab. 
+    * Update logic for AnimalsFirst default type method on General tab.
++ /admin/partials/af/pmp-admin-info.php
+    * Revise for new search filter prefix. 
+    * Update key for AnimalsFirst default type method help string.
++ /admin/partials/pmp-option-levels-general.php
+    * Update key for AnimalsFirst default type method level.
++ /includes/class-pet-match-pro-all-api.php
+    * Revise for new search filter prefix. 
+    * New function callMethod_Parameters to assign Method related variables. 
+    * Update callMethod_Parameters to use default type method from General tab.
++ /includes/class-pet-match-pro-form-builder.php
+    * Revise for new search filter prefix. 
++ /includes/af/class-pet-match-pro-af-api.php
+    * Revise to use new function to populate Method variables.  
++ /includes/af/class-pet-match-pro-af-options.php
+    * Revise to use new function to populate Filters tab.  
++ /includes/af/partials/pmp-field-values.php
+    * Update keys for type level and value arrays.
+    * Remove unnecessary species arrays. 
++ /includes/af/partials/pmp-field-levels-*.php
+    * Revise filter, sort and order level prefixes. 
++ /includes/af/partials/pmp-field-values-*.php
+    * Revise filter, sort and order label and value prefixes. 
++ /includes/rg/partials/pmp-field-levels-adopt.php
+    * Revise filter, sort and order level prefixes. 
++ /includes/rg/partials/pmp-field-values-adopt.php
+    * Revise filter, sort and order label and value prefixes. 
+
+Version 5.0.5 - June 21, 2024
++ /includes/class-pet-match-pro-af-api.php
+    * Update error handling on animal detail shortcode function. 
++ /includes/class-pet-match-pro-pp-api.php
+    * Update error handling on animal detail shortcode function.
++ /includes/class-pet-match-pro-rg-api.php
+    * Update error handling on animal detail shortcode function. 
++ /admin/partials/pmp-option-levels-instructions.php
+    * Updated for AnimalsFirst.
++ /admin/partials/pp/pmp-instructions-animal-details.html
+    * Rename to pmp-instructions-animal-detail.html
++ /admin/partials/pp/pmp-instructions-detail-adopt.html
+    * Rename to pmp-instructions-details-adopt.html
++ admin/partials/pp/pmp-instructions-detail-found.html
+    * Rename to pmp-instructions-details-found.html
++ /admin/partials/pp/pmp-instructions-detail-lost.html
+    * Rename to pmp-instructions-details-lost.html
++ /admin/partials/rg/pmp-instructions-animal-details.html
+    * Rename to pmp-instructions-animal-detail.html
++/admin/partials/rg/pmp-instructions-detail-adopt.html
+    * Rename to pmp-instructions-details-adopt.html
++ /admin/class-pet-match-pro-admin-settings.php
+    * Update with new instruction file names.
++ /admin/class-pet-match-pro-filter-functions.php
+    * Update function to restrict search sort order values based on admin configuration and license type.
+
+Version 5.0.4 - June 9, 2024
++ /includes/class-pet-match-pro.php 
+    * Add new shortcode [pmp-search].
++ /public/class-pet-match-pro-public.php
+    * Add function for new pmp-search shortcode.
++ /includes/class-pet-match-pro-af-api.php
+    * Update search feature to support new pmp-search shortcode.
+    * Removed function for [pmp-lost-found-search] shortcode.
+
+Version 5.0.3 - May 13, 2024
++ /admin/class-pet-match-pro-admin-settings.php
+    * Support AnimalsFirst API v2.
++ /includes/class-pet-match-pro-af-api.php
+    * Support AnimalsFirst API v2.
++ /includes/af/partials/*.php
+    * Support AnimalsFirst API v2.
+
+Version 5.0.2 - April 19, 2023 
++ /includes/af/class-pet-match-pro-af-options.php
+    * Remove static search filter definitions to support dynamic values from AnimalsFirst. 
++ /includes/af/class-pet-match-pro-af-api.php
+    * Update to pull search filter values from AnimalsFirst. 
++ /admin/class-pet-match-pro-admin-settings.php
+    * Add logic to disable General tab setting to display age in years by Integration Provider.
++ /admin/partials/pmp-option-levels-general.php
+    * Add configuration to disable General tab setting to display age in years by Integration Provider.
++ /pet-match-pro.php
+    * Add PAGE_BUILDER constant.
+    * Add INTEGRATION_PARTNERS constant.
++ /public/class-pet-match-pro-public.php
+    * Update Detail shortcodes to use the appropriate ID field for the Integration Provider.
+    * Update to use PAGE_BUILDER constant. 
++ /admin/class-pet-match-pro-admin-settings.php
+    * Use INTEGRATION_PARTNERS constant.
+
+Version 5.0.1 - April 14, 2023 
++ /pet-match-pro.php
+    * Add variable for AnimalsFirst Integration Partner.  
++ /public/class-pet-match-pro-public.php
+    * Add support for AnimalsFirst Integration Partner.  
++ /public/templates/af
+    * New directory for AnimalsFirst Integration Partner.
++ /public/templates/af/adoptable-deafult.php
+    * New file for AnimalsFirst Integration Partner.
++ /includes/class-pet-match-pro.php
+    * Add support for AnimalsFirst Integration Partner.  
++ /includes/class-pet-match-pro-activator.php
+    * Add support for AnimalsFirst Integration Partner.  
+    * Update for location settings move to General tab.
++ /includes/af/class-pet-match-pro-af-options.php
+    * New file for AnimalsFirst Integration Partner.
++ /includes/af/partials
+    * New directory for AnimalsFirst Integration Partner.
++ /includes/af/partials/pmp-field-levels-adopt.php
+    * New file for AnimalsFirst Integration Partner.
+    * Add defaults for Location settings.
++ /includes/af/partials/pmp-field-values.php
+    * New file for AnimalsFirst Integration Partner.
++ /admin/class-pet-match-pro-admin-settings.php
+    * Add support for AnimalsFirst Integration Partner.  
+    * Add ALL Location settings. 
++ /includes/pp/class-pet-match-pro-pp-options.php
+    * Remove location settings.
+    * Reverse lost and found settings on the Filyter Options tab.
++ /includes/rg/class-pet-match-pro-rg-options.php
+    * Remove location settings.
++ /admin/class-pet-match-pro-filter-functions.php
+    * Add support for AnimalsFirst Integration Partner.  
++ /admin/partials/pmp-option-levels-general.php
+    * Add level for AnimalsFirst Status.
+    * Add levels for Location settings moved from Integration Partner Filter Options tab.
++ /admin/partials/rg/pmp-option-levels-filter.php
+    * Remove location levels.
++ /admin/partials/rg/pmp-admin-info.php
+    * Remove location help text.
++ /admin/partials/pp/pmp-option-levels-filter.php
+    * Remove location levels.
+    * Remove icon levels left erroneously from a previous revision.
++ /admin/partials/pp/pmp-admin-info.php
+    * Remove location help text.
++ /admin/partials/af
+    * New directory for AnimalsFirst Integration Partner. 
++ /admin/partials/af/pmp-admin-info.php
+    * New file for AnimalsFirst Filter and Label field information.     
++ /admin/partials/af/pmp-option-levels-filter.php
+    * New file for AnimalsFirst Integration Partner. 
++ /admin/partials/php-admin-info.php
+    * Add help text for AnimalsFirst status.
+    * Add help text for all Location settings.
++ /admin/partials/pmp-option-levels-instructions.php
+    * Add support for AnimalsFirst Integration Partner. 
++ /includes/af/class-pet-match-pro-af-detail-functions.php
+    * New file for AnimalsFirst Integration Partner.
++ /admin/partials/af/pmp-option-levels-labels.php
+    * New file for AnimalsFirst Integration Partner. 
++ /includes/af/class-pet-match-pro-af-api.php
+    * New file for AnimalsFirst Integration Partner.
+
+Version 4.8.2 - April 12, 2024
++ /includes/pp/class-pet-match-pro-pp-options.php
+    * Increase location count to 5 vs. 3.
++ /admin/partials/pp/pmp-admin-info.php
+    * Add help field values for the additional location fields.
++ /includes/rg/class-pet-match-pro-rg-options.php
+    * Increase location count to 5 vs. 3.
++ /admin/partials/rg/pmp-admin-info.php
+    * Add help field values for the additional location fields.
++ /includes/class-pet-match-pro-all-api.php
+    * Update locationFilters function to process all locations configured.
+
+Version 4.8.1 - April 6, 2024
++ /includes/pp/class-pet-match-pro-pp-options.php
+    * Add label values for location filters.
+    * Add location exclusion fields.
++ /admin/partials/pp/pmp-admin-info.php
+    * Add help field values for new label values for location filters.
+    * Add help field values for new location exclusions. 
++ /includes/class-pet-match-pro-all-api.php
+    * Add functions to set and process animal locations filters.
+    * Add function to set animal location exclusions. 
+    * Update error processing of search results. 
+    * Add function to process shortcode replacement in default description across integration partners.
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Update logic to process animal locations permitting partial location matches and changes in the location label for searches, details and animal details.
+    * Optimize use of variables and constants.
+    * Add logic to exclude results by location.
+    * Add icons to search results.
+    * Use new function for default description.
++ /public/templates/pp/*.php
+    * Update details templates with new location logic.
+    * Add icons to detail templates.
++ /public/pp/pet-match-pro-styles.css
+    * Add style to format search results.
++ /includes/rg/class-pet-match-pro-rg-options.php
+    * Add label values for location filters.
+    * Add location exclusion fields.
++ /admin/partials/rg/pmp-admin-info.php
+    * Add help field values for new label values for location filters.
+    * Add help field values for new location exclusions. 
++ /includes/rg/class-pet-match-pro-rg-api.php
+    * Update logic to process animal locations permitting partial location matches and changes in the location label for animal details and animal details. 
+    * Optimize use of variables and constants.
+    * Add logic to exclude results by location.
+    * Use new function for default description.
++ /public/templates/rg/*.php
+    * Update details templates with new location logic.
++ /pet-match-pro.php
+    * Add additional RescueGroups field constants to support code optimization.
++ /admin/partials/pp/pmp-option-levels-filter-php
+    * Add level for location exclusions from results.
++ /admin/partials/rg/pmp-option-levels-filter-php
+    * Add level for location exclusions from results.
++ /includes/pp/class-pet-match-pro-pp-detail-functions.php
+    * Update logic to support search & detail icons.
++ /includes/rg/class-pet-match-pro-rg-detail-functions.php
+    * Update logic to support search & detail icons.
+
+Version 4.7.3 - March 31, 2024
++ /admin/class-pet-match-pro-admin-settings.php
+    * Only include color css styles when the Colors tab is active.  
+    * Add unique setting to General tab to control the max number of thumbnails displayed on the animal detail pages.
++ /admin/partials/pmp-option-levels-general.php
+    * Add level value for new detail thumbnail max General setting. 
++ /admin/partials/pmp-admin-info.php
+    * Add help field value for new detail thumbnail max General setting. 
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Correct issue displaying animal details when key value does not exist.
+    * Update to use new thumbnail max setting.
++ /includes/rg/class-pet-match-pro-rg-api.php
+    * Update to use new thumbnail max setting.
+    * Correct error when displaying animal detail that does not exist.
++ /public/templates/pp/*.php
+    * Update detail templates to use new thumbnail max setting.
++ /public/templates/rg/*.php
+    * Update detail templates to use new thumbnail max setting.
++ /includes/class-pet-match-pro-activator.php
+    * Assign default value to new thumbnail max setting.
++ /admin/partials/pet-match-pro-public-color-css.php
+    * Extend the Adoptable Details Title class to paragraphs and spans.
+ 
+Version 4.7.2 - March 23, 2024
++ /public/class-pet-match-pro-public.php
+    * Variable and code clean-up.
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Correct error with return of no results from details shortcode. 
++ /includes/class-pet-match-pro.php
+    * Variable and code clean-up.
++ /pet-match-pro.php
+    * Add additional constants to support code clean-up.
++ /admin/class-pet-match-pro-admin-settings.php
+    * Add Color settings to support posters. 
++ /admin/partials/pmp-option-levels-color.php
+    * Add level settings to support colors for posters.
++ /admin/partials/pmp-admin-info.php
+    * Add help text to support colors for posters.
++ /public/partials/pet-match-pro-public-color-css.php
+    * Add color settings for posters.
++ /includes/rg/class-pet-match-pro-rg-api.php
+    * Correct issue displaying animal details when ID does not exist.  
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Correct issue displaying animal details when ID does not exist. 
++ /public/templates/rg/adoptable-cpa.php
+    * Correct issue displaying animal details when ID does not exist.      
++ /public/templates/rg/adoptable-default.php
+    * Correct issue displaying animal details when ID does not exist.      
++ /public/templates/rg/details-poster.php
+    * Correct issue displaying animal details when ID does not exist. 
++ /public/templates/pp/*.php
+    * Correct issue displaying animal details when ID does not exist. 
++ /public/class-pet-match-pro-public.php
+    * Correct an issue with the use of replace option with the animal detail shortcode.
++ /admin/partials/pp/pmp-instructions-animal-details.html
+    * Added instruction for use of the replace option with the animal detail shortcode.
++ /admin/partials/rg/pmp-instructions-animal-details.html
+    * Added instruction for use of the replace option with the animal detail shortcode.
++ /includes/pp/class-pet-match-pro-detail-functions.php
+    * Correct issue in the processing of animal labels.
+
+Version 4.7.1 - March 20, 2024
++ /admin/class-pet-match-pro-admin-settings.php
+    * Add Colors tab to simplify the customization of the front-end. 
++ /admin/partials/pmp-option-levels-color.php
+    * New file for Admin Colors tab. 
++ /admin/partials/pmp-admin-info.php
+    * Add help text for Colors tab.
++ /includes/class-pet-match-pro.php
+    * Register the new Colors tab.
++ /public/partials/pet-match-pro-public-color-css.php
+    * New file to set color styles from Colors tab.
++ /includes/rg/class-pet-match-pro-rg-api.php
+    * Update to include the color styles for search and detail output.
+    * Correct issue with formatting of search results.
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Update to include the color styles for search and detail output.
+
+Version 4.6.5- March 18, 2024
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Correct error with display of featured pet.
+    * Correct error displaying animal details shortcode values in the Default Animal Description setting.
++ /includes/pp/class-pet-match-pro-pp-options.php
+    * Correct name of Adoptable Animal Name label field.
++ /admin/partials/pp/pmp-admin-info.php
+    * Correct name of Adoptable Animal Name label field.
+
+Version 4.6.4- March 17, 2024
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Correct error with return of no combined lost/found search results.
+    * Correct error when calling shortcodes from admin page builder.
+    * Correct error with deprecated reference to variables.
+    * Correct error displaying animal details shortcode values in the Default Animal Description setting.
+    * Correct error converting age to years.
++ /includes/rg/class-pet-match-pro-rg-api.php
+    * Correct error displaying animal details shortcode values in the Default Animal Description setting.
++ /includes/class-pet-match-pro-all.php
+    * Correct error with use of Search Feature Link setting.
++ /public/templates/pp/*
+    * Correct error with initialize of Max Detail Icons setting.
++ /public/templates/rg/*
+    * Correct error with initialize of Max Detail Icons setting.
++ /admin/class-pet-match-pro-settings.php
+    * Correct error with deprecated reference to variables.
++ /public/class-pet-match-pro-public.php
+    * Correct issue calling shortcodes from admin page builder.
+
+Version 4.6.3 - March 15, 2024
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Correct error with return of no combined lost/found search results.
+
+Version 4.6.2 - March 14, 2024
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Correct error with return of no combined lost/found search results.
+
+Version 4.6.1 - March 12, 2024
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Correct error with return of no search results.
++ /public/templates/pp/details-poster.php
+    * Correct errors with use across multiple methods.
++ /public/templates/rg/details-poster.php
+    * Apply appropriate changes made to PetPoint version. 
+
+Version 4.5.5 - March 11, 2024
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Correct error with return of no search results.
+
+Version 4.5.4 - March 10, 2024
++ /includes/rg/class-pet-match-pro-rg-api.php
+    * Correct error with the identification of filter options by method type for the creation of a search. 
++ /public/templates/rg/adoptable-cpa.php
+    * Correct error with return to search URL.
++ /public/templates/rg/adoptable-default.php
+    * Correct error with return to search URL.
++ /public/templates/pp/*.php
+    * Correct error with return to search URL.
++ /includes/class-pet-match-pro-all-api.php
+    * Correct error with function to show details.
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Correct error with return of no search results.
+
+Version 4.5.2 - March 9, 2024
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Add support for count parameter on adoptable search shortcode. 
++ /admin/partials/pp/pmp-instructions-search-adopt.html
+    * Add instructions for use of count parameter.
++ /admin/partials/pp/pmp-instructions-search-found.html
+    * Add instructions for use of count parameter.
++ /admin/partials/pp/pmp-instructions-search-lost.html
+    * Add instructions for use of count parameter.
++ includes/rg/class-pet-match-pro-rg-api.php
+    * Add support for count parameter on adoptable search shortcode. 
++ /admin/partials/rg/pmp-instructions-search-adopt.html
+    * Add instructions for use of count parameter.
++/public/class-pet-match-pro-public.php
+    * Correct issue with the assignment of options with blank values.
+
+Version 4.4.2 - March 2, 2024
++ /admin/class-pet-match-pro-admin-settings.php
+    * Remove activation defaults. 
++ /includes/class-pet-match-pro-activator.php
+    * Update activation defaults.
+
+Version 4.4.1 - March 1, 2024
++ /includes/class-pet-match-pro-all-api.php
+    * New class to consolidate shared functions across all integration partners.
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Update to support common function class. 
++ /public/templates/pp/*.php
+    * Update to support common function class. 
+    * Replace direct field references with constants.
++ /includes/rg/class-pet-match-pro-rg-api.php
+    * Update to support common function class. 
++ /public/templates/rg/*.php
+    * Update to support common function class. 
++ /admin/partials/pp/pmp-option-levels-filter.php
+    * Add security level (premium) to display search and detail icons.
++ /admin/partials/pp/pmp-admin-info.php
+    * Add field help for Adoption search result and detail icon settings.
++ /admin/class-pet-match-pro-admin-settings.php
+    * Enable the setting to control the number of thumbnail images on a detail page for all integration partners.
++ /admin/partials/pmp-admin-info.php
+    * Enable the setting to control the number of thumbnail images on a detail page for all integration partners.
++ /admin/partials/rg/pmp-admin-info.php
+    * Remove icon help text to transition to General tab.
++ /admin/partials/pmp-admin-info.php
+    * Add help text for icon fields in General tab.
++ /admin/partials/rg/pmp-options-levels-filter.php
+    * Remove icon levels to transition to General tab.
++ /admin/partials/pmp-options-levels-general.php
+    * Add icon levels for transition to General tab.
+
+
+Version 4.3.2 - February 28, 2024
++ /admin/class-pet-match-pro-admin-settings.php
+    * Add General tab settings for search feature link to display next to Search Submit button.   
++ /admin/partials/pmp-option-levels-general.php
+    * Add level for new General tab search feature link.
++ /admin/partials/pmp-admin-info.php
+    * Add help text for the General tab search feature link.
++ /public/css/pet-match-pro-styles.css
+    * Add styles to support Search form feature button.
++ /includes/class-pet-match-pro-form-builder.php
+    * Add support for Search form feature button. 
++ /includes/rg/class-pet-match-pro-rg-api.php
+    * Add support for Search form feature button. 
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Add support for Search form feature button. 
+
+Version 4.3.1 - February 27, 2024
++ /includes/rg/class-pet-match-pro-rg-options.php
+    * Add foster home and shelter locations to Filter tab.  
++ /admin/partials/rg/pmp-option-levels-filter.php
+    * Add level for new Filter tab locations.
++ /admin/partials/rg/pmp-admin-info.php
+    * Add help text for the Filter tab foster and shelter fields. 
++ /public/templates/rg/*.php
+    * Change templates to use the foster and shelter locations
++ /includes/pp/class-pet-match-pro-pp-options.php
+    * Add foster home and shelter locations to Filter tab. 
++ /admin/partials/pp/pmp-option-levels-filter.php
+    * Add level for new Filter tab locations.
++ /admin/partials/pp/pmp-admin-info.php
+    * Add help text for the Filter tab foster and shelter fields. 
++ /public/templates/pp/*.php
+    * Change templates to use the foster and shelter locations
+
+Version 4.2.3 - February 25, 2024
++ /includes/rg/class-pet-match-pro-rg-detail-functions.php
+    * Add function to display result icons. 
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Trim special characters from details provided in shortcode. 
++ /includes/rg/class-pet-match-pro-rg-api.php
+    * Trim special characters from details provided in shortcode. 
++ /includes/public/templates/rg/adoptable-default.php
+    * Implement General setting to restrict the photos on the detail page.
+
+Version 4.2.2 - February 22, 2024
++ /includes/rg/class-pet-match-pro-rg-options.php
+    * Add Filter Tab settings to display icons in Adoption Search results and detail pages.
++ /admin/partials/rg/pmp-option-levels-filter.php
+    * Add security level (premium) to display search and detail icons.
++ /admin/partials/rg/pmp-admin-info.php
+    * Add field help for Adoption search result and detail icon settings.
+
+Version 4.2.1 - February 20, 2024
++ /admin/class-pet-match-pro-admin-settings.php
+    * Change the purpose of the Sponsorship link in the Contact tab for supporting an animal to the organization, removing adoptable from setting.
+    * Add a setting to Contact tab to provide an image for use when promoting the organization sponsor.
+    * Add Donation link to Contact tab.
++ /admin/partials/pmp-admin-options.php
+    * Add/alter to support changes to Contact tab above.
++ /admin/partials/pmp-option-levels-contact.php
+    * Add/alter to support changes to Contact tab above.
++ /public/css/pet-match-pro-styles.php
+    * Add formatting for sponsorship image.
+
+Version 4.1.3 - February 19, 2024
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Additional changes to resolve errors with lost & found search combination shortcode.
+
+Version 4.1.2 - February 16, 2024
++ /includes/pp/class-pet-match-pro-pp-api.php
+    * Changes to resolve errors with lost & found search combination shortcode.
+    * Correct error processing when no data is received from PetPoint. 
+ 
+Version 4.1.1 - February 1, 2024 
++ /includes/rg/class-pet-match-pro-rg-api.php
+    * Changes to support Rescue Groups Integration Partner.
+
+Version 4.0.1 - December 4, 2023 
++ /pet-match-pro.php
+    * Add variable for Rescue Groups Integration Partner.  
++ /public/class-pet-match-pro-public.php
+    * Add support for Rescue Groups Integration Partner.  
++ /public/templates/rg
+    * New directory for Rescue Groups Integration Partner.
++ /public/templates/rg/adoptable-deafult.php
+    * New file for Rescue Groups Integration Partner.
++ /includes/class-pet-match-pro.php
+    * Add support for Rescue Groups Integration Partner.  
++ /includes/class-pet-match-pro-activator.php
+    * Use PetPoint constant.
++ /includes/pp/class-pet-match-pro-pp-options.php
+    * Renamed from class-pet-match-pro-pp-options.php to include both PetPoint Filter and Label options.
++ /includes/rg/class-pet-match-pro-rg-api.php
+    * New file for Rescue Groups Integration Partner.
++ /includes/rg/class-pet-match-pro-rg-options.php
+    * New file for Rescue Groups Integration Partner.
++ /includes/rg/class-pet-match-pro-rg-detail-functions.php
+    * New file for Rescue Groups Integration Partner.
++ /includes/rg/partials
+    * New directory for Rescue Groups Integration Partner.
++ /includes/rg/partials/pmp-field-levels-adopt.php
+    * New file for Rescue Groups Integration Partner.
++ /includes/rg/partials/pmp-field-values-adopt.php
+    * New file for Rescue Groups Integration Partner.
++ /includes/rg/partials/pmp-field-values.php
+    * New file for Rescue Groups Integration Partner.
++ /admin/class-pet-match-pro-admin-settings.php
+    * Add support for Rescue Groups Integration Partner. 
++ /admin/partials/pmp-option-levels-filter.php
+    * Move to /admin/partials/pp/.
++ /admin/partials/rg/pmp-option-levels-filter.php
+    * New file for Rescue Groups Integration Partner. 
++ /admin/partials/pmp-option-levels-labels.php
+    * Move to /admin/partials/pp/ and remove Lost & Found.
++ /admin/partials/rg/pmp-option-levels-labels.php
+    * New file for Rescue Groups Integration Partner. 
++ /admin/partials/pmp-admin-info.php
+    * Remove PetPoint Filter and Label field information. 
++ /admin/partials/pp/pmp-admin-info.php
+    * New file for PetPoint Filter and Label field information. 
++ /admin/partials/rg/pmp-admin-info.php
+    * New file for RescueGroups Filter and Label field information.     
++ /admin/class-pet-match-pro-filter-functions.php
+    * Add support for Rescue Groups Integration Partner.  
++ /admin/partials/pmp-option-levels-general.pmp
+    * Remove Lost & Found settings for Rescue Groups Integration Partner. 
++ /admin/partials/pmp-option-levels-contact.pmp
+    * Remove Lost & Found settings for Rescue Groups Integration Partner.
++ /admin/partials/pmp-option-levels-instructions.pmp
+    * New file to remove Lost & Found instructions for Rescue Groups Integration Partner.
++ /admin/partials/rg
+    * New directory for Rescue Groups Integration Partner.
+
+Version 3.3.2 - November 13, 2023 
++ /public/templates/pp/adoptable-conversion.php    
+    * Correct error preventing the use of the Contact Option Adoption Application URL.
+
+Version 3.2.1 - October 28, 2023
+ + Additional changes to support distribution via the WordPress repository. 
+
+Version 3.1.2 - September 27, 2023
+ + /included/pp/class-pet-match-pro-pp-api.php
+    * Changes to text as filter values and to display animal details when a video is present. 
+
+Version 3.1.1 - September 3, 2023
+ + Changes to support distribution via the WordPress repository. 
+
+Version 3.0.1 - July 23, 2023
+ + /README.txt
+    * Revised as appropriate.
+ + /included/pp/class-pet-match-pro-pp-api-0.php
+    * Revert file_get_contents to use of wp_remote_get and wp_remote_retrieve_body.
+ + /included/pp/class-pet-match-pro-pp-api.php
+    * Revert file_get_contents to use of wp_remote_get and wp_remote_retrieve_body.
+ + /admin/css/pet-match-pro-admin_1.css
+    * Remove @import of Google Lato font. 
+ + /admin/css/pet-match-pro-admin.min_1.css
+    * Remove @import of Google Lato font. 
+ + /public/templates/pp/video-load.php
+    * Use wp_enqueue_script to reference jQuery, BootStrap and CloufFlare Popper.
+ + /includes/pp/class-pet-match-pro-contact-options.php
+    * Use WP function esc_html to escape html data. 
+
+Version 2.9.9 - April 25, 2023
+  + /includes/pp/class-pet-match-pro-pp-api.php
+    * Corrected deprecated code for use with PHP 8.X when displaying a search filter with a free subscription.
+
+Version 2.9.8 - April 22, 2023
+  + /admin/class-pet-match-pro-admin-settings.php
+    * Corrected bug related to the display of values on the labels tab with a free license.   
+
+Version 2.9.7 - April 20, 2023
+  + /includes/pp/class-pet-match-pro-pp-api.php
+    * Corrected deprecated code for use with PHP 8.X.
+    * Ignore animals details specified in the shortcode that do not exist. 
+  + /public/templates/pp/adoptable-default.php
+    * Default values for species and animal name when not provided in the details. 
+    * Corrected deprecated code for use with PHP 8.X.
+  + /public/css/pet-match-pro-styles.css
+    * Adjusted label and result display widths for both search results and details.
+
+Version 2.9.6 - April 12, 2023
+  + /public/class-pet-match-pro-public.php
+    * Corrected issues with short code functions in the admin interface.
+  + /admin/class-pet-match-pro-admin-settings.php
+    * Corrected bug related to obsolescence of $api_activated.  
+  + /admin/class-pet-match-pro-filter-functions.php
+    * Corrected bugs in defining Search_Filter_Values when no custom labels exist.
+  + /admin/partials/activate_license_form.php
+    * Added plugin version number. 
+  + /admin/partials/deactivate_license_form.php
+    * Added plugin version number. 
+  + /includes/pp/class-pet-match-pro-pp-api.php
+    * Corrected bugs related to the display of found and lost search filter with a free license.
+    * Corrected bugs related to creating an onclick parameter when a GA tracking method does not exist. 
+    * Corrected bug related to the display of the search form filter options. 
+  + /includes/pp/class-pet-match-pro-pp-option.php
+    * Set empty values for admin search_sort options for all methods. 
+    * Corrected issue with check box callback function.
+  + /includes/pp/partials/pmp-field-levels-lost.php
+    * Changed level_value_filter_orderby_datelast_lost from 2 to 3.
+  + /includes/pp/partials/pmp-field-levels-found.php
+    * Changed level_value_filter_orderby_datelast_found from 2 to 3.
+
+Version 2.9.5 - April 1, 2023
+  + /includes/pp/class-pet-match-pro-pp-api.php
+    * Corrected bug related to the inclusion of the detail template preventing the display of animal details. 
+    * Enhanced the adoptable featured short code to perform similar to search results.
+
+Version 2.9.4 - March 20, 2023
+  + /admin/partials/pmp-instructions-admin-settings.html
+    * New file with admin settings shortcode instructions. 
+  + /admin/partials/pmp-option-levels.php
+    * New file with admin tab security levels.  
+  + /public/class-pet-match-pro-public.php
+    * Require paid license for use of admin shortcode with filter and label setting options. 
+
+Version 2.9.3 - March 14, 2023
+  + /pet-match-pro.php
+    * Added new constant to manage PetPoint media. 
+  + /includes/pp/partials/pmp-field-levels-found.php
+    * Added level entry for conversion buttons. 
+  + /includes/pp/partials/pmp-field-levels-lost.php
+    * Added level entry for conversion buttons. 
+  + /publuc/css/pet-match-pro-styles.css
+    * Added entries to format the conversion button in wide adoption detail template.
+  + /public/templates/pp/
+    * Updated conversion button levels in all templates.
+
+Version 2.9.2 - March 11, 2023
+  + /pet-match-pro.php
+    * Added new constant to manage PetPoint media. 
+  + /includes/pp/partials/pmp-field-levels-adopt.php
+    * Allow display of photos in search result details. 
+  + /includes/pp/class-pet-match-pro-pp-detail-functions.php
+    * Remove media file options from pet details (displayed by default). 
+  + /admin/class-pet-match-pro-filter-functions.php
+    * Remove media file options from search details (displayed by default).
+
+Version 2.9.1 - March 7, 2023
+  + /pet-match-pro.php
+    * Added new constants to manage plugin activation.  
+  + /includes/pp/class-pet-match-pro-pp-api.php
+    * Corrected bugs related to activation without the selection of filter options.  
+  + /public/css/pet-match-pro-styles.css
+    * Added class pmp-red to style text red. 
+  + /public/pp/templates/*
+    * Corrected all templates to display an error when no details are provided for display.
+
+Version 2.8.3 - March 4, 2023
+  + /pet-match-pro.php
+    * Added function to prevent admin warning of previously sent headers. 
+  + /includes/pp/class-pet-match-pro-pp-api.php: 
+    * Corrected bugs preventing the display of search results and animal details with a free subscription. 
+  + /admin/class-pet-match-pro-filter-functions.php
+    * Default subscription to free when one is not found in the settings. 
+  + /includes/pp/partials/pmp-field-levels-adopt.php
+    * Corrected filter field levels. 
+    * Restricted adoption search filter to dogs or cat for free subscriptions. 
+
+Version 2.8.2 - February 24, 2023
+  + /admin/class-pet-match-pro-admin-settings.php
+    * Added an Instructions tab. 
+  + /admin/partials/pmp-instructions-installation.html
+    * New file with plugin installation instructions.
+  + /admin/partials/pp/pmp-instructions-search-adopt.html
+    * New file with instructions for use of the adoptable search shortcode.
+  + /admin/partials/pp/pmp-instructions-detail-adopt.html
+    * New file with instructions for use of the adoptable detail shortcode.
+  + /admin/css/pet-match-pro-admin.css
+    * New entries to format instructions.
+  + /includes/pp/partials/pmp-field-values.php
+    * Added array defining free search species.
+  + /includes/pp/class-pet-match-pro-pp-api.php
+    * Restrict free license type to free search species.
+
+Version 2.7.1 - February 4, 2023
+  + /includes/pp/class-pet-match-pro-pp-detail-functions.php: 
+    * Added a new function Animal_Labels to output the labels for a specified array and context.   
+  + /includes/pp/class-pet-match-pro-pp-api.php: 
+    * Corrected a bug preventing the display of search result labels.   
+  + /admin/partials/pmp-option-levels-filter.php
+    * Renamed all the level settings.
+  + /admin/partials/pmp-option-levels-contact.php
+    * Renamed all the level settings.
+  + /includes/pp/class-pet-match-pro-pp-option.php
+    * Corrected a bug displaying an error at the bottom of the Labels tab in the admin. 
+    * Updated to use the new filter and contact level setting values.
+
+Version 2.6.2 - January 1, 2023
+  + pet-match-pro.php: Defined global variables for use in securing content based on license type.
+  + /admin/class-pet-match-pro-filter-functions: New class with functions to process animal search features.
+  + /admin/class-pet-match-pro-admin.php: 
+    * Updated to use new global variables to include files. 
+    * Updated to include /admin/class-pet-match-pro-filter-functions.php
+  + /includes/pp/class-pet-match-pro-admin.php: 
+    * Updated to use new global variables to include files. 
+    * Updated to include /admin/class-pet-match-pro-pp-api.php
+  + /admin/class-pet-match-pro-admin-settings.php: 
+    * Renamed many of the general settings to align with a consistent naming convention. 
+    * Updated the default general and contact options. 
+  + /includes/pp/class-pet-match-pro-pp-api.php: 
+    * Updated to reflect the name changes in general settings.  
+  + /includes/class-pet-match-pro.php: 
+    * Updated to use the new global variables.  
+  + /public/class-pet-match-pro-public.php: 
+    * Updated to use the new global variables.  
+  + /includes/class-pet-match-pro-activator.php: 
+    * Updated to reflect the renamed general settings  
+
+Version 2.5.2 - December 6, 2022
+  + /includes/pmp-option-levels-general.php: New file to secure general tab options based on license type.
+  + /includes/pmp-option-levels-contact.php: New file to secure contact tab options based on license type.
+  + /includes/pmp-option-levels-filter.php: New file to secure filter tab options based on license type.
+  + /includes/pmp-option-levels-labels.php: New file to secure labels tab options based on license type.
+  + /includes/class-pet-match-pro.php: Enable actions for contact, label and filter initialization procedures. 
+  + /includes/pp/class-pet-match-pro-pp-option.php: Secure admin filter tab options based on license type. 
+  + /admin/class-pet-match-pro-admin-settings.php:
+    * Secure general tab settings based on license type. 
+    * Move contact options to dedicated initialization procedure and secure based on license type.
+    * Move filter options to dedicated initialization procedure and secure based on license type.
+
+Version 2.5.1 - December 4, 2022
+  + /admin/partials/activate_license_form.php: Enhanced the activation instructions. 
+  + /admin/partials/deactivate_license_form.php: Enhanced the activation instructions.
+  + /admin/css/pet-match-pro-admin.css: Added styles used in the activation/deactivation changes.
+
+Version 2.4.11 - November 27, 2022
+  + /includes/pp/class-pet-match-pro-pp-api.php: Restrict search filter and result values based on license type. 
+  + /includes/class-pet-match-pro-form-builder.php: Restrict search filter and result values based on license type.
+  + /admin/class-pet-match-pro-admin-settings.php: Added the contact tab setting social_share to control the display of the icons on the animal detail pages.
+  + /includes/pmp-admin-info.php: Added the help text for the social_share admin setting. 
+
+Version 2.4.10 - November 23, 2022
+  + /includes/class-pet-match-pro.php: Define new shortcode pmp-social-share.
+  + /public/class-pet-match-pro-public.php: Add function for pmp-social-share shortcode. 
+  + /public/css/pet-match-pro-styles.css: Style pmp-social-share shortcode results.
+  + /includes/pmp-field-levels-adopt.php: Restrict social share icons from use with free licenses. 
+
+Version 2.4.9 - November 15, 2022
+  + /public/class-pet-match-pro-public.php: 
+    * Restrict the use of lost, found and featured shortcodes to paid license types. 
+    * Restrict use of pmp_detail shortcode to paid license types. 
+
+Version 2.4.8 - November 14, 2022
+  + /includes/class-pet-match-pro-form-builder.php: Added class attribute to form Submit button. 
+  + /public/templates/pp/adoptable-conversion-no-app.php: Corrected container id for call-us button. 
+
+Version 2.4.7 - November 13, 2022
+  + /includes/pp/class-pet-match-pro-pp-api.php: 
+      * Restrict use of template option on detail shortcodes to paid license types. 
+  + /admin/class-pet-match-pro-admin-settings.php:
+      * Removed poster_details_template, required to use template option on details shortcode. 
+
+Version 2.4.5 - November 6, 2022
+  + /public/templates/pp/adoptable-default.php, lost-default.php and found-default.php: Added onclick behavior to thumbnail images and buttons.
+  + /public/css/pet-match-pro-styles.css: Corrected issues w/ styling for detail pages.
+  + /admin/class-pet-match-pro-admin-settings.php:
+      * Limit use of theme-based template directory to paid license types.
+      * Only allow use of templates containing 'default' for free license type.
+  + /public/class-pet-match-pro-public.php: Do not include the theme-based style sheet with a free license. 
+  + /includes/pp/class-pet-match-pro-pp-api.php: 
+      * Include CSS from admin in search and detail pages for all paid license types.
+  + /public/templates/pp/*.php: Removed the inclusion of the style sheet and corrected a bug preventing the display of anything after the declawed key.
+
+Version 2.4.1 - November 2, 2022
+  + /includes/class-pet-match-pro.php: Added options PMP_License_Type and PMP_License_Type_ID to manage premium features.
+  + /admin/class-pet-match-pro-admin-settings.php: 
+      * Added General Option Google Analytics Tracking Method for Preferred Level and excluded Custom Css from Free Level. 
+      * Added the PetMatchPro file path to the call to CheckWPPlugin to support update distribution. 
+      * Updated PetMatchPro icon. 
+      * Added the contact setting for website support.
+  + /includes/pmp-admin-info.php: Configured hover text for new GA Tracking Method website support settings.
+  + /includes/pp/class-pet-match-pro-api.php: 
+      * Added onclick attribute for search result links. 
+      * Update message displayed on front-end to use website support contact email when data is not available from integration partner.
+  + /public/templates/pp/adoptable-preferred.php: New Adoptable Details template with Google onclick attribute. 
+  + pet-match-pro.php: Included the definition of the plugin file path to support update distribution.
+  + /admin/license/class-pet-match-pro-license.php: Added declaration of private variable $isEncryptUpdate to support update distribution. 
+  + /includes/class-pet-match-pro-form-builder.php: Added onclick attribute to form Submit button based on license level. 
+  + /assets/*.png: Added plugin banner and icon files.
+  + /admin/license/class-pet-match-pro-license.php: Configured plugin update logo.
+
+Version 2.3.3 - October 12, 2022
+  + /admin/class-pet-match-pro-admin-settings.php: Code formtting.
+  + /admin/css/pet-match-pro-admin.css: Added the class pmp-license-info-title format the license deactivation form.
+  + /admin/partials/deactivate_license_form.php: Formatted the deactivation form. 
+  + /admin/partials/activate_license_form.php: Formatted the activation form.
+Version 2.3.2 - October 11, 2022
+  + /admin/license/class-pet-match-pro-license.php: Now returns the license parameter to manage license types.  
+Version 2.3.1 - September 30, 2022
+  + pet-match-pro.php: Updated version number.
+  + /includes/class-pet-match-pro.php: Added new shortcode pmp-poster-details to display a poster from a details page.
+  + /public/class-pet-match-pro-public.php: Added the function petmatch_poster_details to process the new shortcode. 
+  + /includes/pp/class-pet-match-pro-pp-api.php: Added the function outputDetailsPoster to display the poster. 
+  + /public/templates/details-poster-default.php: New file to format the poster page.
+
+Version 2.2.2 - September 28, 2022
+  + Added options labels="on,yes,1" to all search and featured shortcodes.
+  + Corrected bug with featured shortcode to display age appropriately based on setting.
+  + Corrected bug to properly display search results for featured shortcode.
+  + Corrected bug with the display of orderby values by method.
+
+Version 2.1.1 - September 25, 2022
+  + Bug fix to use the orderby label if configured.
+  + Configure orderby values by method.
+  + General setting option to use labels settings for orderby values.
+
+Version 2.0.2 - September 23, 2022
+  + Cleaned up the field labels on the "Labels" tab in the admin to make them consistent across search methods.
+
+Version 2.0.1 - September 14, 2022
+  + Added shortcode [petmatch_lost_found_search] to combine the search results for lost and found animals from PetPoint.
